@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Header Styling */
+h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Input Fields */
+input[type="text"], .location {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, .location:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Location Dropdown */
+.location {
+    background-color: #fff;
+}
+
+/* Radio Button Styles */
+.switch-field {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.switch-field input {
+    display: none;
+}
+
+.switch-field label {
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+}
+
+.switch-field input:checked + label {
+    background: #007bff;
+    color: white;
+}
+
+/* Button Styling */
+.submit {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    transform: translateY(-3px);
+}
+
+/* Result Section */
+.result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
